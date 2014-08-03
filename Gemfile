@@ -5,7 +5,7 @@ gem 'rails', '3.2.19'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required
@@ -21,6 +21,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'viddl-rb'
+gem 'daemons'
+gem 's3'
+gem 'hirefire'
+gem 'delayed_job_active_record'
+
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
