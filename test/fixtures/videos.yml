@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  thumb_url: MyString
+  publish_date: 2014-08-03 12:47:56
+  video_id: MyString
+  download_link: MyText
+  converted: false
+  audio_path: MyString
+  duration: 1
+  s3_permalink: MyString
+  channel_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  thumb_url: MyString
+  publish_date: 2014-08-03 12:47:56
+  video_id: MyString
+  download_link: MyText
+  converted: false
+  audio_path: MyString
+  duration: 1
+  s3_permalink: MyString
+  channel_id: 1

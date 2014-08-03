@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140803193313) do
+ActiveRecord::Schema.define(:version => 20140803194756) do
 
   create_table "channels", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,22 @@ ActiveRecord::Schema.define(:version => 20140803193313) do
     t.string   "custom_subcategory"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "thumb_url"
+    t.datetime "publish_date"
+    t.string   "video_id"
+    t.text     "download_link"
+    t.boolean  "converted"
+    t.string   "audio_path"
+    t.integer  "duration"
+    t.string   "s3_permalink"
+    t.integer  "channel_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end
