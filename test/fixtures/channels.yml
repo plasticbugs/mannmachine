@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  custom_description: MyText
+  custom_author: MyString
+  custom_keywords: MyText
+  custom_category: MyString
+  custom_subcategory: MyString
+
+two:
+  name: MyString
+  custom_description: MyText
+  custom_author: MyString
+  custom_keywords: MyText
+  custom_category: MyString
+  custom_subcategory: MyString
