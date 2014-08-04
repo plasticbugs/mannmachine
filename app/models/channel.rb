@@ -39,7 +39,7 @@ class Channel < ActiveRecord::Base
       :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
       :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"])
 
-    @bucket = @service.buckets.find("mannmachine")
+    @bucket = @service.buckets.find(ENV["S3_BUCKET"])
 
     @videos.each do |video|
       unless video.converted
