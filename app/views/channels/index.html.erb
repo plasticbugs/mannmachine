@@ -1,4 +1,4 @@
-    <div class="container">
+    <div class="container"><div class="pull-right rss-feed-link"><h4><a href="<%= url_for :controller => 'channels', :action => 'feed' %>.rss">RSS Feed</a></h4></div>
       <h1><%= @channel.name %></h1>
       <% @videos.each do |video| %>
       	<% if video.converted %>
