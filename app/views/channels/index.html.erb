@@ -1,4 +1,20 @@
     <div class="container">
       <h1><%= @channel.name %></h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-    </div>
+      <% @videos.each do |video| %>
+      	<% if video.converted %>
+      		<div class="converted">
+      	<% else %>
+      		<div class="queued">
+      	<% end %>
+	
+      		<h4><a href=<%= video.video_id %>>
+      		
+      		      	<%= video.title %></a></h4>
+	
+      		<p><%= video.description.truncate(300) %></p>
+      		  </div>
+      <% end %>
+
+
+
+<div class="bs-callout bs-callout-warning">

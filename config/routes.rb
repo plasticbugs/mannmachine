@@ -2,6 +2,8 @@ Ytmachine::Application.routes.draw do
 
   match '/:channel_name' => 'channels#index'
 
+  get '/:channel_name/feed' => 'channels#feed'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
